@@ -1,0 +1,55 @@
+/* .linkCards {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.linkCards:hover {
+    text-decoration: none;
+    color: inherit;
+} */
+
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+}
+
+.card:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card img {
+    transition: all 500ms ease-out;
+}
+
+.card .capa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    /* width: 100%; */
+    height: 100%; 
+    background-color:  rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    color: aliceblue;
+    /* font-size: 20px; */
+
+}
+
+.points {
+    font-weight: 800;
+    font-size: 15px;
+    /* font-size: 18px; */
+}

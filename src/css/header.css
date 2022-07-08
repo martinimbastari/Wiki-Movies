@@ -1,0 +1,79 @@
+.bg-per {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.574);
+    backdrop-filter: blur(20px);
+}
+
+.container-fluid  ul {
+    margin: 0;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.nav-item:hover {
+    transition: all 0.3s;
+    border-bottom: 1px solid rgb(237, 237, 237) ;
+}
+
+.hamburguerMenu {
+    display: none;
+}
+
+
+.smallScreen {
+    transition: all 0.3s ease;
+    text-align: center;
+    display: none;
+}
+
+.smallScreenOverlay {
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+
+.smallScreenOverlay .closeIcon{
+    font-size: 27px;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburguerMenu {
+        display: flex;
+    }
+
+    .container-fluid ul li{
+        display: none;
+    }
+
+    .buscador {
+        display: none;
+    }
+
+    .smallScreen {
+        display: flex;
+    }
+
+    .nav-item {
+    margin: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    }
+
+    .logout {
+        display: none;
+    }
+
+    .logout button {
+        font-size: 1rem;
+    }
+
+}
