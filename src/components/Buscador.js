@@ -1,6 +1,7 @@
 import React from 'react'
 import swal from '@sweetalert/with-react';
 import { useNavigate } from 'react-router-dom';
+import {BsSearch} from 'react-icons/bs'
 
 export default function Buscador() {
 
@@ -26,7 +27,7 @@ export default function Buscador() {
             <input className="form-control p-1" type="text" name="keyword" placeholder='Buscar...'/>
         </label>
 
-        <button type="submit" className="btn btn-primary p-1 ">Buscar</button>
+        <button type="submit" className="btn btn-primary p-1 "><BsSearch></BsSearch></button>
             
         </form>
   )

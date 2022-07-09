@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useAuth } from './context/authContext'
-import {useNavigate, Navigate} from 'react-router-dom'
+import {useNavigate, Navigate, Link} from 'react-router-dom'
 import swal from '@sweetalert/with-react';
 import Footer from './Footer'
 
@@ -43,34 +43,39 @@ export default function Login() {
 
   return (
     <>
-
-    
-     <div className="container w-75 mt-5  rounded shadow">
-     {error && <h2>{error}</h2>}
+    <div  className='contenedor-login'>
+    <div className="container mt-5 rounded text-dark contenedor-principal">
             <div className="row align-items-lg-stretch">
-                <div className="col bg rounded d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
+                <div className="col bgLogin  d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
                 </div>
-        <div className="col back-gradient p-5 rounded-end">
-            <h2 className="fw-bold  text-center mb-3 text-white">¡Bienvenido, inicia sesion!</h2>
-            <form onSubmit={handleSubmit}>
+        <div className="col contenedor-login_info p-5 rounded-end">
+            <h2 className="fw-bold text-center mb-3 ">¡Bienvenido, inicia sesion!</h2>
+            <form onSubmit={handleSubmit} className='text-dark'>
                 <div className="mb-4">
-                    <label for='email'  className="form-label text-white">
+                    <label for='email'  className="form-label">
                 Correo electronico: </label>
-                    <input onChange={handleChange} className="form-control " type="email" name="email" placeholder='ejemplo@gmail.com'/>
+                    <input onChange={handleChange} className="form-control shadow " type="email" name="email" placeholder='ejemplo@gmail.com'/>
                 </div>
             
-                <div className="mb-4">
-                    <label for='password' className="form-label text-white"> Contraseña: </label>
-                    <input onChange={handleChange} className="form-control" type="password" name="password" placeholder='******'/>
+                <div className='mb-4'>
+                    <label for='password' className="form-label"> Contraseña: </label>
+                    <input onChange={handleChange} className="form-control shadow" type="password" name="password" placeholder='******'/>
                 </div>
 
                 <div className="d-grid">
-                    <button type="submit" className="btn btn-primary">Inicia Sesion</button>
+                    <button type="submit" className="boton shadow">Inicia Sesion</button>
+                </div>
+                <div className="col-auto mt-2">
+                    <span id="passwordHelpInline" className="form-text text-secondary">
+                         ¿No tienes una cuenta?  <Link to='/registro'>Registrate aca.</Link> 
+                    </span>
                 </div>
             </form>
                 </div>
             </div>
         </div>
+    </div>
+    
         <Footer/>
     </>
   )

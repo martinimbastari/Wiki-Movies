@@ -1,7 +1,6 @@
 .bg-per {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.574);
-    backdrop-filter: blur(20px);
+    background-color: rgba(1, 0, 32, 0.939);
 }
 
 .container-fluid  ul {

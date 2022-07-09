@@ -33,7 +33,7 @@ function Listado (props) {
     return (
         <>
         <Header/>
-        <div className="row px-5">
+        <div className="row px-5 contenedor-listado">
             {
                 moviesList.map((oneMovie, idx) =>{
                     return(

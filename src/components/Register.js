@@ -5,6 +5,8 @@ import {useNavigate} from 'react-router-dom'
 import swal from '@sweetalert/with-react';
 import Footer from './Footer'
 
+import '../css/registro.css'
+
 export default function Register() {
     const [user, setUser] = useState({
         email: '',
@@ -42,32 +44,37 @@ export default function Register() {
 
   return (
     <>
-
-    
-     <div className="container w-75 mt-5 text-white  rounded shadow">
+    <div className='contenedor-registro'>
+     <div className="container w-75 mt-5 text-dark rounded ">
             <div className="row align-items-lg-stretch">
-                <div className="col bg rounded d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
+                <div className="col bgRegistro  d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
                 </div>
-        <div className="col back-gradient p-5 rounded-end">
-            <h2 className="fw-bold  text-center mb-3">Registrate gratis!</h2>
+        <div className="col contenedor-registro_info p-5 rounded-end">
+            <h2 className="fw-bold text-shadow text-center mb-4">¡Registrate gratis!</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-4">
                     <label for='email' className="form-label ">
                 Correo electronico: </label>
-                    <input onChange={handleChange} className="form-control " type="email" name="email" placeholder='ejemplo@gmail.com'/>
+                    <input onChange={handleChange} className="form-control shadow" type="email" name="email" placeholder='ejemplo@gmail.com'/>
                 </div>
             
-                <div className="mb-4">
+                <div>
                     <label for='password' className="form-label "> Contraseña: </label>
-                    <input onChange={handleChange} className="form-control" type="password" name="password" placeholder='******'/>
+                    <input onChange={handleChange} className="form-control shadow" type="password" name="password" placeholder='******'/>
+                </div>
+                <div className="col-auto  mb-4">
+                    <span id="passwordHelpInline"  className="form-text  texto-password text-secondary">
+                         Debe tener al menos 6 caracteres.
+                    </span>
                 </div>
 
-                <div className="d-grid">
-                    <button type="submit" className="btn btn-primary">Registrarse</button>
+                <div className="d-grid  w-100 ">
+                    <button type="submit" className="boton shadow">Registrarse</button>
                 </div>
             </form>
                 </div>
             </div>
+        </div>
         </div>
         <Footer/>
     </>

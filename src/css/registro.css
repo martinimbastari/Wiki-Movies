@@ -1,50 +1,52 @@
-
-.bgLogin {
-    background-image: url(../assets/portada.jpg);
+.bgRegistro {
+    background-image: url(../assets/portada\ registro.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 8px 0px 0px 8px;
 }
 
-.contenedor-login {
+.contenedor-registro {
     padding-top: 10px;
     margin: 0;
     height: 100vh;
     background-image: linear-gradient( 99deg,  rgba(115,18,81,1) 10.6%, rgba(28,28,28,1) 118% );
 }
 
-.contenedor-login_info {
+
+.contenedor-registro_info {
     background: #EFEFEF;
 }
 
-.contenedor-login_info h2 {
+.contenedor-registro_info h2 {
     font-size: 40px;
     text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
 }
 
-.contenedor-login_info form {
+.contenedor-registro_info form {
     padding: 10px;
     margin: auto;
     width: 60%;
 }
 
-.contenedor-login_info form label {
+.contenedor-registro_info form label {
     font-size: 25px;
     text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
 }
 
-
-.row {
-    height: 600px;
+.boton {
+    font-size: 18px;
+    border: 1px solid blueviolet;
+    color: #EFEFEF;
+    background-color: blueviolet;
+    border-radius: 8px;
+    padding: 4px;
+    width: 100%;
 }
 
-@media screen and (max-width: 768px){
-    .row {
-        height: 50vh;
-    }
-
-    .back-gradient {
-        border-radius: 8px;
-    }
+.boton:hover {
+    border: 1px solid blueviolet;
+    color: #000;
+    background-color: #EFEFEF;
 }
+

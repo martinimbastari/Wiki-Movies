@@ -25,7 +25,7 @@ export default function Pagination({info,pageNumber,setPageNumber}) {
     //     setPageNumber(data.selected)
     // }}
     // pageCount={info}/> 
-    <div className='container d-flex justify-content-center gap-5 my-5'>
+    <div className='container d-flex justify-content-center gap-5 my-3'>
         <button onClick={prev} className='btn btn-primary'>Anterior</button>
         <button onClick={next} className='btn btn-primary'>Siguiente</button>
     </div>

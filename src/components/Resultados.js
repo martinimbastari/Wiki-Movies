@@ -5,6 +5,8 @@ import axios from 'axios';
 import swal from '@sweetalert/with-react';
 import Header from './Header';
 
+import '../css/resultados.css'
+
 export default function Resultados() {
 
     let query = new URLSearchParams(window.location.search);
@@ -32,9 +34,10 @@ export default function Resultados() {
   return (
       <>
       <Header/>
+      <div className="row resultados px-5">
         <h2 className='px-5 py-2 text-white'>Buscaste: <em>{keyword}</em></h2>
         {moviesResults.length === 0 && <h3>No se encontraron resultados</h3>}
-        <div className="row px-5">
+        
             {
                 moviesResults.map((oneMovie, idx) =>{
                     return(
