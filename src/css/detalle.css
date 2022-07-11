@@ -1,16 +1,61 @@
 .box {
-    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
     padding: 2rem;
-    height: 92vh;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+
+.contenedor-detalle {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedorInfo ul li {
+    border: 1px solid white;
+    padding:0px 2px ;
+    border-radius: 8px;
+    list-style: none;
+}
+
+.contenedorInfo p {
+    font-size: 20px;
 }
 
 .contenedorInfo h2 {
  font-size: 35px;
 }
 
+.contenedorInfo span {
+    font-size: 18px;
+}
+
+.play {
+    color: aliceblue;
+    text-decoration: none;
+}
+.play:hover {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
 
 @media screen and (max-width: 750px) {
-    .contenedorInfo {
-        padding: 0;
+
+    .contenedor-detalle {
+        height: 100%;
+    }
+
+    .contenedorInfo h2 {
+        font-size: 30px;
+    }
+    .contenedorInfo ul li {
+        display: flex;
     }
 }

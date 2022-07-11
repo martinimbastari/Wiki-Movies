@@ -16,6 +16,8 @@
 
 .contenedor-registro_info {
     background: #EFEFEF;
+    border-radius: 0px 8px 8px 0px;
+    padding: 3rem;
 }
 
 .contenedor-registro_info h2 {
@@ -48,5 +50,24 @@
     border: 1px solid blueviolet;
     color: #000;
     background-color: #EFEFEF;
+}
+
+@media screen and (max-width: 768px) {
+
+    .contenedor-registro {
+        padding: 1rem;
+    }
+    .contenedor-registro_info {
+        border-radius: 8px;
+        padding: 1rem;
+    }
+
+    .contenedor-registro_info h2 {
+        font-size: 35px;
+    }
+
+    .contenedor-registro_info form {
+        width: 100%;
+    }
 }
 

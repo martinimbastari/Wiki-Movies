@@ -45,11 +45,11 @@ export default function Register() {
   return (
     <>
     <div className='contenedor-registro'>
-     <div className="container w-75 mt-5 text-dark rounded ">
+     <div className="container  mt-5 text-dark rounded ">
             <div className="row align-items-lg-stretch">
                 <div className="col bgRegistro  d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
                 </div>
-        <div className="col contenedor-registro_info p-5 rounded-end">
+        <div className="col contenedor-registro_info">
             <h2 className="fw-bold text-shadow text-center mb-4">¡Registrate gratis!</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-4">

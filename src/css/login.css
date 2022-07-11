@@ -16,6 +16,8 @@
 
 .contenedor-login_info {
     background: #EFEFEF;
+    padding: 3rem;
+    border-radius: 0px 8px 8px 0px;
 }
 
 .contenedor-login_info h2 {
@@ -40,11 +42,18 @@
 }
 
 @media screen and (max-width: 768px){
-    .row {
-        height: 50vh;
+    
+
+    .contenedor-login {
+        padding: 1rem;
+    }
+    
+    .contenedor-login_info {
+        padding: 1rem;
+        border-radius: 8px;
     }
 
-    .back-gradient {
-        border-radius: 8px;
+    .contenedor-login_info form {
+        width: 100%;
     }
 }

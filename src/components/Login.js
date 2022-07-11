@@ -44,11 +44,11 @@ export default function Login() {
   return (
     <>
     <div  className='contenedor-login'>
-    <div className="container mt-5 rounded text-dark contenedor-principal">
+    <div className="container mt-5 rounded text-dark contenedor-principal ">
             <div className="row align-items-lg-stretch">
                 <div className="col bgLogin  d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
                 </div>
-        <div className="col contenedor-login_info p-5 rounded-end">
+        <div className="col contenedor-login_info">
             <h2 className="fw-bold text-center mb-3 ">¡Bienvenido, inicia sesion!</h2>
             <form onSubmit={handleSubmit} className='text-dark'>
                 <div className="mb-4">

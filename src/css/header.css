@@ -1,11 +1,15 @@
 .bg-per {
     position: fixed;
-    background-color: rgba(1, 0, 32, 0.939);
+    background-color: rgba(13, 13, 13, 0.985);
 }
 
 .container-fluid  ul {
     margin: 0;
     align-items: center;
+}
+
+.header{
+    justify-content: space-around;
 }
 
 .nav-item {
@@ -30,8 +34,13 @@
 }
 
 .smallScreenOverlay {
+    padding: 1rem;
     transition: all 0.3s ease;
     height: 100%;
+}
+
+.smallScreenOverlay li {
+    padding: 5px;
 }
 
 
@@ -39,11 +48,15 @@
     font-size: 27px;
     cursor: pointer;
     position: absolute;
-    top: 50px;
+    top: 70px;
     right: 80px;
 }
 
 @media screen and (max-width: 768px) {
+    .header{
+        padding: 1rem;
+        margin: 0 auto;
+    }
     .hamburguerMenu {
         display: flex;
     }

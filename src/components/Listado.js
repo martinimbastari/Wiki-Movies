@@ -42,7 +42,7 @@ function Listado (props) {
                              <img src={`https://image.tmdb.org/t/p/w500/${oneMovie.poster_path}`} height="400px" width="100%" alt="Card image cap"/>
                              <div className="capa">
                                 <p className="card-text py-4">{oneMovie.overview.substring(0,150)}...</p>
-                                <h5 className="points pt-5">Puntuacion: {oneMovie.vote_average} ⭐</h5>
+                                <h5 className="points pt-5">⭐{oneMovie.vote_average}/10 </h5>
                                 <Link to={`/detalle?movieID=${oneMovie.id}`} className="btn btn-primary" >Ver detalles
                              </Link>
                              </div>
