@@ -1,23 +1,20 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { useNavigate, Link} from "react-router-dom";
-import swal from '@sweetalert/with-react';
-import axios from "axios";
+import { Link} from "react-router-dom";
 import "../css/listado.css"
 import Pagination from "./Pagination";
 import Slider from "./Slider";
-import { useAuth } from './context/authContext';
+
 
 import Header from "./Header";
 
 
-function Listado (props) {
-    const navigate = useNavigate();
+function Listado () {
     let [pageNumber, setPageNumber] = useState(1);
     let [info, setInfo] = useState()
     const [moviesList, setMoviesList] = useState([]);
     const [selectedMovie, setSelectedMovie] = useState({})
-    console.log(selectedMovie)
+
 
    
 

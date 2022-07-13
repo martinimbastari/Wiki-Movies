@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {GiHamburgerMenu} from 'react-icons/gi';
-import {AiOutlineClose, AiOutlineHome} from 'react-icons/ai'
+import {AiOutlineClose} from 'react-icons/ai'
 import '../css/header.css';
 import { useState } from 'react';
 import { useAuth } from './context/authContext';

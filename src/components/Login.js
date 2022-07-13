@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useAuth } from './context/authContext'
-import {useNavigate, Navigate, Link} from 'react-router-dom'
+import {useNavigate, Link} from 'react-router-dom'
 import swal from '@sweetalert/with-react';
 import Footer from './Footer'
 
