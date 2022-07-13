@@ -5,6 +5,7 @@ import swal from '@sweetalert/with-react';
 import axios from "axios";
 import "../css/listado.css"
 import Pagination from "./Pagination";
+import Slider from "./Slider";
 import { useAuth } from './context/authContext';
 
 import Header from "./Header";
@@ -15,6 +16,10 @@ function Listado (props) {
     let [pageNumber, setPageNumber] = useState(1);
     let [info, setInfo] = useState()
     const [moviesList, setMoviesList] = useState([]);
+    const [selectedMovie, setSelectedMovie] = useState({})
+    console.log(selectedMovie)
+
+   
 
     let api = `https://api.themoviedb.org/3/discover/movie?api_key=05b7bce64d5b68a034314fc39fdefe74&language=es-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${pageNumber}&with_watch_monetization_types=flatrate`;
 
@@ -23,17 +28,20 @@ function Listado (props) {
             let data = await fetch(api).then((res) => res.json());
             setInfo(data.total_pages)
             setMoviesList(data.results)
+            setSelectedMovie(data.results[0])
+            
         })();
     }, [api]);
-
-    
 
     
     
     return (
         <>
+        <div>
         <Header/>
+        <Slider selectedMovie={selectedMovie} setSelectedMovie={setSelectedMovie}/>
         <div className="row px-5 contenedor-listado">
+        
             {
                 moviesList.map((oneMovie, idx) =>{
                     return(
@@ -60,6 +68,9 @@ function Listado (props) {
             <Pagination info={info} pageNumber={pageNumber} setPageNumber={setPageNumber}></Pagination>
           
         </div>
+
+        </div>
+        
         </>
     )
 }

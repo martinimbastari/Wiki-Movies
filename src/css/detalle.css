@@ -18,7 +18,7 @@
 
 .contenedorInfo ul li {
     border: 1px solid white;
-    padding:0px 2px ;
+    padding: 0px 6px ;
     border-radius: 8px;
     list-style: none;
 }

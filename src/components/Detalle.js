@@ -38,9 +38,10 @@ export default function Detalle() {
       <Header/>
         <div className='row box w-100 m-0'>
           <div className='col-lg-3'>
+          <Link className='btn btn-primary my-2' to='/listado'>← Volver</Link>
           <img className="img-fluid" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="movie poster"/>
           </div>
-          <div className='col-lg-8 col-sm-12  contenedorInfo my-3'>
+          <div className='col-lg-8 col-sm-12  contenedorInfo my-5'>
           <h6 className='my-1 text-white'> <span className='text-white'>{movie.release_date}</span></h6>
             <h2 className='my-4'>{movie.title}</h2>
             

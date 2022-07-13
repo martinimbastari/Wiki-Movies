@@ -24,7 +24,6 @@ function Header () {
 
     return (
         <>
-    <header>
         <nav className="navbar navbar-expand-lg bg-per fixed">
              <div className="container-fluid d-flex justify-content-center header gap-2">
                 <ul className="d-flex text-center p-2">
@@ -60,8 +59,7 @@ function Header () {
                 }
                 
             </div>
-        </nav>
-    </header>               
+        </nav>               
         </>
        
     )
