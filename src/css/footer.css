@@ -1,9 +1,9 @@
 footer {
-    background-color: rgba(47, 47, 47, 0.638);
+    background-color: rgba(15, 15, 32, 0.906);
     color: aliceblue;
     width: 100%;
-    padding: 20px;
-    position: absolute;
+    padding: 2rem 0;
+    
     margin: 0;
     bottom: 0px;
 }

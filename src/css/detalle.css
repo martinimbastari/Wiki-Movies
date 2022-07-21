@@ -16,6 +16,12 @@
     background-size: cover;
 }
 
+.contenedorInfo ul {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .contenedorInfo ul li {
     border: 1px solid white;
     padding: 0px 6px ;
